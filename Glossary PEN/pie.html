@@ -1,0 +1,454 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width: 500px;margin: auto;" class="pie">
+        <div style="position: absolute;">
+            <div id="slice_1" class="parent" onmouseover="setBackgroundImage('1', true)" onmouseout="setBackgroundImage('1', false)" >
+
+                <div class="shadow" ></div>
+                <div id="pe" data-modal-target="#modal1" class="Policy__Evaluation_ cc"
+                    onclick="fun('slice_1' , '-20' , '-20')"
+                    >
+                    <span style="position: absolute;user-select: none;right: 30px;top: 105px;color: white;font-size: 13pt;font-weight: bold;font-family: sans-serif;text-align: right; z-index: 1;">
+                        Policy <br> Evaluation
+                    </span>
+                </div>
+                <div id="oe" data-modal-target="#modal2" class="_01 cc child" onclick="fun('slice_1' , '-20' , '-20')">
+                    <span
+                        style="position: absolute;left: 10px;top: 72px;transform: rotate(-66deg);color: white;font-weight: bold;font-size: 10pt;font-family: sans-serif;text-align: center;">Outcome
+                        <br> Evaluation</span>
+                </div>
+                <div id="ie" data-modal-target="#modal3" onclick="fun('slice_1' , '-20' , '-20')" class="_02 cc child"><span style="position: absolute;left: 54px;text-align: center;top: 28px;transform: rotate(-23deg);color: white;font-weight: bold;font-size: 10pt;font-family: sans-serif;
+                    ">Impact <br> Evaluation</span></div>
+            </div>
+
+
+
+
+
+            <div id="slice_2" class="parent" onmouseover="setBackgroundImage('2', true)" onmouseout="setBackgroundImage('2', false)">
+
+                <div class="shadow" ></div>
+                <div id="policy" data-modal-target="#modal4" class="Policy cc" onclick="fun('slice_2' , '-20' , '20')"><span style="position: absolute;user-select: none;left: 30px;top: 105px;color: white;font-size: 13pt;font-weight: bold;font-family: sans-serif;text-align: left;
+                    ">
+                        Policy
+                    </span></div>
+                <div onclick="fun('slice_2' , '-20' , '20')" id="domain" data-modal-target="#modal5" class="_03 cc child"><span
+                        style="      position: absolute;left: 19px;top: 21px;transform: rotate(11deg);color: white;font-weight: bold;font-size: 10pt;font-family: sans-serif;
+                    ">Domain</span></div>
+                <div onclick="fun('slice_2' , '-20' , '20')" id="area" data-modal-target="#modal6" class="_04 cc child"><span
+                        style="position: absolute;left: 106px;top: 34px;transform: rotate(32deg);color: white;font-weight: bold;font-size: 10pt;font-family: sans-serif;
+                    ">Area</span></div>
+                <div onclick="fun('slice_2' , '-20' , '20')" id="level" data-modal-target="#modal7" class="_05 cc child"><span
+                        style="position: absolute;left: 161px;top: 40px;transform: rotate(56deg);color: white;font-weight: bold;font-size: 10pt;font-family: sans-serif;
+                    ">Level</span></div>
+                <div onclick="fun('slice_2' , '-20' , '20')" id="setting" data-modal-target="#modal8" class="_06 cc child"><span style="position: absolute;left: 190px;top: 42px;transform: rotate(78deg);color: white;font-weight: bold;font-size: 10pt;font-family: sans-serif;
+                    ">Setting</span></div>
+            </div>
+
+
+
+
+            <div id="slice_3" class="parent" style="left: 0px; top: 0px;" onmouseover="setBackgroundImage('3', true)" onmouseout="setBackgroundImage('3', false)">
+                <div class="shadow" ></div>
+                <div id="pa" data-modal-target="#modal9" class="Policy__Action cc" onclick="fun('slice_3' , '20' , '20')"><span style="position: absolute;user-select: none;left: 30px;top: 52.5px;color: white;font-size: 13pt;font-weight: bold;font-family: sans-serif;text-align: left;
+                    ">
+                        Policy <br> Action
+                    </span></div>
+                <div onclick="fun('slice_3' , '20' , '20')" id="pi" data-modal-target="#modal10" class="_07 cc child"><span
+                        style="font-size: 10pt;font-family:sans-serif;color: white;font-weight: bold;transform: rotate(293deg);position: absolute;left: 157px;text-align: center;top: 64px;">Policy
+                        Instruments</span></div>
+                <div onclick="fun('slice_3' , '20' , '20')" id="indicators" data-modal-target="#modal11" class="_08 cc child"><span
+                        style="font-size: 10pt;position: absolute;left: 50px;top: 185px;transform: rotate(338deg);font-family:sans-serif;color: white;font-weight: bold;text-align: center;">Indicators</span>
+                </div>
+            </div>
+
+
+
+            <div id="slice_4" class="parent" onmouseover="setBackgroundImage('4' , true)" onmouseout="setBackgroundImage('4', false)">
+                <div class="shadow" ></div>
+                <div id="pie" data-modal-target="#modal12" class="Policy_Implementation_Evaluation cc"
+                    onclick="fun('slice_4' , '20' , '-20')"><span style="position: absolute;user-select: none;right: 30px;top: 52.5px;color: white;font-size: 13pt;font-weight: bold;font-family: sans-serif;text-align: right;
+                    ">
+                        Policy <br> Implementation <br> Evaluation
+                    </span></div>
+                <div onclick="fun('slice_4' , '20' , '-20')" id="io" data-modal-target="#modal13" class="_09 cc child"> <span
+                        style="font-size:10pt;font-family:sans-serif;color:white;font-weight: bold;position: absolute;top: 191px;left: 15px;transform: rotate(17deg);text-align: center;">Implementation
+                        <br> Outcome</span></div>
+                <div onclick="fun('slice_4' , '20' , '-20')" id="pim" data-modal-target="#modal14" class="_10 cc child"> <span
+                        style="font-size:10pt;font-family:sans-serif;color:white;font-weight: bold;position: absolute;top: 134px;left: 6px;transform: rotate(43deg);text-align: center;">Policy
+                        <br> Implementation</span></div>
+                <div onclick="fun('slice_4' , '20' , '-20')" id="ip" data-modal-target="#modal15" class="_11 cc child"> <span
+                        style="font-size:10pt;font-family:sans-serif;color:white;font-weight: bold;position: absolute;top: 42px;text-align: center;left: -18px;transform: rotate(72deg);">Implementation
+                        <br>Process</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal1">
+        <div class="modal-header">
+            <div class="title">Policy Evaluation</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Policy Evaluation description here -->
+
+            The systematic collection or analysis of information to make judgments about contexts, activities, 
+            characteristics, outcomes (short-term) or impact (long-term) of one or more components of the 
+            Policy Process. Evaluation may inform or improve policy development, adoption, implementation, or 
+            effectiveness, and may build the evidence base for policy actions/interventions.
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="modal-header">
+            <div class="title">Outcome Evaluation</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Outcome Evaluation description here -->
+
+            Policy Outcomes are short-term and intermediate changes in target organisational, societal or cultural norms; 
+            i.e. audience behaviour, awareness, attitudes, or knowledge. Desired outcomes are termed policy objectives.
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="modal-header">
+            <div class="title">Impact Evaluation</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!--Impact Evaluation description here -->
+
+            Within a policy impact evaluation, evaluation principles or methods are used to examine long term changes in 
+            key indicators that have occurred since the implementation of a policy, or the extent to which changes can be 
+            attributed to the policy. It should apply an equity focus and should include unintended outcomes outside of 
+            the key indicators identified. 
+        </div>
+    </div>
+    <div class="modal" id="modal4">
+        <div class="modal-header">
+            <div class="title">Policy</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Policy description here -->
+
+            Purposeful decisions, plans or actions made by voluntary or authoritative actors in a system 
+            designed to create system-level change to directly or indirectly achieve specific societal goals. 
+            Within this definition, public policy is a form of government action usually expressed in a law, a 
+            regulation, or an order at it reflects an intent of government or its representative entities. 
+        </div>
+    </div>
+    <div class="modal" id="modal5">
+        <div class="modal-header">
+            <div class="title">Domain</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Domain description here -->
+
+            Components of the political system and/or settings organized around substantive issues. Policy domains 
+            differ depending the target health goal/behaviour i.e. food or PA. The context needs to be considered 
+            such as geographical, epidemiological, socio-cultural, socio-economic, ethical, legal, organization 
+            or funding. 
+        </div>
+    </div>
+    <div class="modal" id="modal6">
+        <div class="modal-header">
+            <div class="title">Area</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Area description here -->
+
+            Specific content areas for policy actions within specific settings e.g. physical education, labelling. 
+        </div>
+    </div>
+    <div class="modal" id="modal7">
+        <div class="modal-header">
+            <div class="title">Level</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Level description here -->
+
+            Laws, State- District- & School-level codes or regulations, or class-level rules.
+        </div>
+    </div>
+    <div class="modal" id="modal8">
+        <div class="modal-header">
+            <div class="title">Setting</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Setting description here -->
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum
+            obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus,
+            consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem
+            dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis
+            perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae
+            nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+        </div>
+    </div>
+    <div class="modal" id="modal9">
+        <div class="modal-header">
+            <div class="title">Policy Action</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Policy Action description here -->
+
+            Policy actions are defined as actual options selected by policymakers. Public policy actions are specific 
+            actions put into place by any level of government or associated agencies to achieve the public health objective. 
+            They may be written into broad strategies, action plans, official guidelines/notifications, calls to action, 
+            legislation, or rules and regulations. A policy action may have its own exclusive policy document or may be part 
+            of a larger document.
+        </div>
+    </div>
+    <div class="modal" id="modal10">
+        <div class="modal-header">
+            <div class="title">Policy Instruments</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Policy Instruments description here -->
+
+            Policy Instruments Techniques or means through which public actors (e.g. national and EU government bodies, 
+            public agencies, etc.) attempt to attain their goals. Examples of policy instruments are: fiscal policies 
+            (taxes, subsidies), food standards, labelling regulations, education measures, etc. Different from 
+            intervention instruments.
+        </div>
+    </div>
+    <div class="modal" id="modal11">
+        <div class="modal-header">
+            <div class="title">Indicators</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Indicators description here -->
+
+            Indicators are specific and measurable characteristics of changes that demonstrate progress towards outcome 
+            or impact. Indicators may be observable or not observable. 
+        </div>
+    </div>
+    <div class="modal" id="modal12">
+        <div class="modal-header">
+            <div class="title">Policy Implementation Evaluation</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Policy Implementation Evaluation description here -->
+
+            Evaluation principles and methods are used to understand how the policy was translated into operational 
+            practice, and/or to identify the occurrence and variation of intended and unintended outcomes and impacts. 
+            Implementation evaluation may compare and monitor different components or intensities of implementation or 
+            can inform efforts to identify and implement policy solutions by providing information about short-term 
+            outcomes, long-term impacts, knowledge, awareness, support, barriers and facilitators, sustainability 
+            and other implementation outcomes.
+        </div>
+    </div>
+    <div class="modal" id="modal13">
+        <div class="modal-header">
+            <div class="title">Implementation Outcome</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Implementation outcome description here -->
+
+            Under implementation evaluation, implementation outcomes are the effects of deliberate or purposive 
+            actions to implement new treatments, practices, and services. 
+        </div>
+    </div>
+    <div class="modal" id="modal14">
+        <div class="modal-header">
+            <div class="title">Policy Implementation</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Policy Implementation description here -->
+
+            Policy impact refers to all possible economic, social, political, technical and ecological effects at local, 
+            regional or national level that have a direct or indirect effect on the target group or other parties. 
+            It includes all significant longer-term effects directly or indirectly, intended or unintended, on the 
+            ultimate stakeholders and third parties.
+        </div>
+    </div>
+    <div class="modal" id="modal15">
+        <div class="modal-header">
+            <div class="title">Implementation Process</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+            <!-- Implementation Process description here -->
+
+            Implementation process is realised by means of implementation strategies or instruments. Policy implementation 
+            process is shaped by top-down actions, involving  governments (decisions & administrative practices), 
+            non-government (corporate) power structures and/or by bottom up actions, involving stakeholders, and actors 
+            involved in the actual policy delivery. Implementation process interacts with the characteristics of 
+            implementation setting and/or implementation context.
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script>
+
+        var b1 = false;
+        var idName;
+        function fun(id, top, left) {
+            idName = id;
+            if (b1 == false) {
+                document.getElementById(id).style.cssText = "left:" + left + "px; top:" + top + "px;";
+                b1 = true
+            }
+        }
+
+
+        var tooltip = document.querySelectorAll('.coupontooltip');
+        document.addEventListener('mousemove', fn, false);
+        function fn(e) {
+            for (var i = tooltip.length; i--;) {
+                tooltip[i].style.left = (e.pageX + 2) + 'px';
+                tooltip[i].style.top = (e.pageY + 2) + 'px';
+            }
+        }
+
+        function setText(text, id) {
+            document.getElementById("toolTip").innerText = text;
+        }
+        const openModalButtons = document.querySelectorAll('[data-modal-target]')
+        const closeModalButtons = document.querySelectorAll('[data-close-button]')
+        const overlay = document.getElementById('overlay')
+
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = document.querySelector(button.dataset.modalTarget)
+                openModal(modal)
+            })
+        })
+
+        overlay.addEventListener('click', () => {
+            const modals = document.querySelectorAll('.modal.active')
+            modals.forEach(modal => {
+                closeModal(modal)
+            })
+        })
+
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = button.closest('.modal')
+                closeModal(modal)
+            })
+        })
+
+        function openModal(modal) {
+            if (b1 == true) {
+                if (modal == null) return
+                modal.classList.add('active')
+                overlay.classList.add('active')
+            }
+        }
+
+        function closeModal(modal) {
+            if (modal == null) return
+            modal.classList.remove('active')
+            overlay.classList.remove('active')
+            document.getElementById(idName).style.cssText = "left:0px; top:0px;";
+            b1 = false;
+        }
+
+        function setBackgroundImage(slice , bool) {
+
+            if (bool == true){
+                if (slice == 1) {
+                    document.getElementById("pe").style.backgroundColor = "rgb(243, 146, 0)";
+                    set("oe" , "img/1c.png" );
+                    set("ie" , "img/2c.png");
+                    growSlice(document.getElementById("slice_1"),"top")
+                }else if(slice == 2){
+                    set("domain" , "img/3c.png");
+                    set("area" , "img/4c.png");
+                    set("level" , "img/5c.png");
+                    set("setting" , "img/6c.png");
+                    document.getElementById("policy").style.backgroundColor = "rgb(243, 146, 0)";
+                    growSlice(document.getElementById("slice_2"), "top")
+                }else if(slice == 3){
+                    document.getElementById("pa").style.backgroundColor = "rgb(243, 146, 0";
+                    set("pi" , "img/7c.png");
+                    set("indicators" , "img/8c.png");
+                    growSlice(document.getElementById("slice_3"), "bottom")
+                }else if(slice == 4){
+                    document.getElementById("pie").style.backgroundColor = "rgb(243, 146, 0)";
+                    set("io" , "img/9c.png");
+                    set("pim" , "img/10c.png");
+                    set("ip" , "img/11c.png");
+                    growSlice(document.getElementById("slice_4") , "bottom")
+                }
+            }else if(bool == false){
+                if (slice == 1) {
+                    document.getElementById("pe").style.backgroundColor = "rgb(0, 102, 51)";
+                    set("oe" , "img/1s.png" );
+                    set("ie" , "img/2s.png");
+                    reduceSlice(document.getElementById("slice_1"), 1)
+                }else if(slice == 2){
+                    set("domain" , "img/3s.png");
+                    set("area" , "img/4s.png");
+                    set("level" , "img/5s.png");
+                    set("setting" , "img/6s.png");
+                    document.getElementById("policy").style.backgroundColor = "rgb(37, 125, 81)";
+                    reduceSlice(document.getElementById("slice_2"), 2)
+                }else if(slice == 3){
+                    document.getElementById("pa").style.backgroundColor = "rgb(0, 102, 51)";
+                    set("pi" , "img/7s.png");
+                    set("indicators" , "img/8s.png");
+                    reduceSlice(document.getElementById("slice_3"), 3)
+                }else if(slice == 4){
+                    document.getElementById("pie").style.backgroundColor = "rgb(37, 125, 81)";
+                    set("io" , "img/9s.png");
+                    set("pim" , "img/10s.png");
+                    set("ip" , "img/11s.png");
+                    reduceSlice(document.getElementById("slice_4"), 4)
+                }
+            }
+        }
+        
+        function growSlice(slice, position) {
+            slice.classList.add("slice_hover")
+            slice.querySelector(".shadow").id=`shadow_${position}_hover`            
+        }
+
+        function reduceSlice(slice, id) {
+            slice.classList.remove("slice_hover")
+            slice.querySelector(".shadow").id=""
+        }
+
+        function set(id , res){
+            document.getElementById(id).style.backgroundImage = "url("+res+")";
+        }
+    </script>
+</body>
+
+</html>
